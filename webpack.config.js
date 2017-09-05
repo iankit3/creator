@@ -4,7 +4,7 @@ var webpack = require('webpack');
 
 module.exports = {
   entry: './index.js',
-  output: { path: 'build', filename: 'bundle.js' },
+  output: { path: path.join(__dirname,'./build'), filename: 'bundle.js' },
   module: {
     loaders: [
       {
@@ -17,8 +17,8 @@ module.exports = {
       },
       {
         test: /\.css/,
-        loader: ExtractTextPlugin.extract('css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'),    
-      }    
+        loader: ExtractTextPlugin.extract('css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'),
+      }
     ]
   },
    plugins: [
