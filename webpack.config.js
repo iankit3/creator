@@ -21,6 +21,10 @@ module.exports = {
       }
     ]
   },
+   devtool: 'inline-source-map',
+   devServer: {
+     contentBase: './'
+   },
    plugins: [
     new ExtractTextPlugin("styles.css")
   ]

@@ -21476,7 +21476,7 @@
 	            _react2.default.createElement(
 	               'h2',
 	               null,
-	               'Hello'
+	               'A header'
 	            )
 	         );
 	      }
